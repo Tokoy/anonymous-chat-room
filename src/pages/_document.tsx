@@ -1,12 +1,12 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { theme } from "@/tools/setting";
+import { theme } from "@/lib/const";
+import Script from 'next/script';
 export default function Document() {
   return (
-    <Html lang="en" >
+    <Html lang="en"  data-theme="garden">
       <Head>
-        <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
       </Head>
-      <body style={{backgroundColor: theme.color3}}>
+      <body  className=" w-screen h-screen m-0 p-0 bg-neutral-content" >
         <Main />
         <NextScript />
       </body>
